@@ -1,0 +1,16 @@
+div{
+    border: solid black 1px;
+    width: max-content;
+    padding: 10px;
+    font-size: 1.5em;
+    background-color: white;
+}
+
+body{
+    background-color: lightgrey;
+    
+}
+#listado{
+    margin: 25px 0 0 0;
+   
+}

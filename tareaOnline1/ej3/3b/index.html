@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html xmlns='http://www.w3.org/1999/xhtml' lang='en'>
+  <head>
+    <meta charset='utf-8' />
+    <title>Filtrador de MAC</title>
+    <link rel='stylesheet' type='text/css' href='src/css/style.css' />
+ 
+  </head>
+
+  <body>
+    <h1>Filtrador de MAC</h1>
+    <form action="procesar.php" method="post">
+      <!-- IMPORTANTE: Al valida solicita labels para cada input, si los pusieramos no podríamos realizar la separación
+          por dos puntos ( : ) de cada par de digitos. 
+          Si quisieramos dejarlo perfecto no quedaría como busco (separados por dos puntos como suelen leerse las MACs-->
+        <input type="text" name="1"  maxlength="2" pattern="[aA|bB|cC|dD|eE|fF|0|1|2|3|4|5|6|7|8|9]{2}" required="required"/> :
+        <input type="text" name="2" maxlength="2" pattern="[aA|bB|cC|dD|eE|fF|0|1|2|3|4|5|6|7|8|9]{2}" required="required"/> :
+        <input type="text" name="3" maxlength="2" pattern="[aA|bB|cC|dD|eE|fF|0|1|2|3|4|5|6|7|8|9]{2}" required="required"/> :
+        <input type="text" name="4" maxlength="2" pattern="[aA|bB|cC|dD|eE|fF|0|1|2|3|4|5|6|7|8|9]{2}" required="required"/> :
+        <input type="text" name="5" maxlength="2" pattern="[aA|bB|cC|dD|eE|fF|0|1|2|3|4|5|6|7|8|9]{2}" required="required"/> :
+        <input type="text" name="6" maxlength="2" pattern="[aA|bB|cC|dD|eE|fF|0|1|2|3|4|5|6|7|8|9]{2}" required="required"/>
+        <button type="submit" id="enviar">FILTRAR</button>
+    </form>
+    <p id="valido">
+        <img
+          style="border:0;width:88px;height:31px"
+          src="http://jigsaw.w3.org/css-validator/images/vcss"
+          alt="¡CSS Válido!"
+        />
+        <img
+          style="border:0;width:88px;height:31px"
+          src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+          alt="¡CSS Válido!"
+        />
+      </p>
+  </body>
+</html>

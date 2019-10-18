@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html xmlns='http://www.w3.org/1999/xhtml' lang='en'>
+
+<head>
+    <meta charset='utf-8' />
+    <title>Instalación Xampp</title>
+    <link rel='stylesheet' type='text/css' href='src/css/estilos.css' />
+</head>
+
+<body>
+    <button onclick="subir()" id="subir">SUBIR</button>
+    <header><h1>Instalación Xamp en Win10</h1></header>
+    <nav>
+        <ul>
+            
+                <li><a href="#">Xampp en Win10</a></li>
+            <li><a href="#">Xampp en Linux</a></li>
+            
+
+        </ul>
+    </nav>
+    <div id="contenido">
+        <section id="windows">
+            <h2>Instalación Xampp en Windows 10</h2>
+            <article>
+                Nuestro primer paso será la descarga de XAMPP para Windows 10 desde su <a
+                    href="https://www.apachefriends.org/es/index.html">web oficial</a> :
+                <br/> <img src="img/img1.png" alt="Lugar descarga" /><br/>
+                Una vez localizado el lugar donde se realizó la descarga ejecutamos como administrador el archivo.
+                <br/> <img src="img/img2.png" alt="Ejecutar administrador"/><br/>
+                Nos saldrá la siguiente pantalla, debido al control de cuentas del usuario:
+                <br/> <img src="img/img3.png" alt="Warning usuario"/><br/>
+                Pulsamos OK para seguir con la instalación, y en la siguiente pantalla Next para continuar con la
+                instalación.
+                <br/> <img src="img/img4.png" alt="Pulsar siguiente"/><br/>
+                En la siguiente ventana podemos configurar el programa a nuestro gusto, en mi caso seleccionaré todas
+                las opciones para optimizar mi trabajo con XAMPP.
+                Seguimos la instalación pulsando NEXT:
+                <br/> <img src="img/img5.png" alt="Siguiente de nuevo"/><br/>
+                Dejamos el lugar de la instalación por defecto. Pulsamos NEXT.
+                <br/> <img src="img/img6.png" alt="Ubicacion instalación"/><br/>
+                En la siguiente pantalla vemos como nos informan que podemos utilizar distintos CMS con XAMPP como
+                wordpress, Joomla , etc.
+                <br/> <img src="img/img7.png" alt="Posibilidad de joomla"/><br/>
+                Instalación lista para comenzar:
+                <br/> <img src="img/img8.png" alt="Listos"/><br/>
+                Comienza la instalación./
+                <br/> <img src="img/img9.png" alt="Comenzar instalación"/><br/>
+                Finalizando la instalación nos saldrá una ventana informando sobre el firewall de windows, ya que
+                nuestro uso será privado continuamos por defecto permitiendo el acceso.
+                <br/> <img src="img/img10.png" alt="Firewall"/><br/>
+                Se nos informa de la instalación con éxito de XAMPP , marcamos la opción de abrir el panel de control ya
+                que debemos realizar configuraciones.
+                <br/> <img src="img/img11.png" alt="Instalación con éxito"/><br/>
+                Seleccionamos idioma, en este caso inglés.
+                <br/> <img src="img/img12.png" alt="Seleccionar idioma"/><br/>
+                Y tendremos la siguiente pantalla.<br/>
+                Aquí arrancaremos el módulo de apache y mySQL pulsando el botón START (a su derecha). Firewall nos
+                pedirá de nuevo confirmación con mySQL.
+                <br/> <img src="img/img13.png" alt="Módulos"/><br/>
+                Seguimos con la configuración, en este caso pulsando el botón config.
+                <br/> <img src="img/img14.png" alt="Seguir Instalación"/><br/>
+                Aquí podremos seleccionar que módulos se autoiniciarán. En nuestro caso, queremos Apache y mySQL ya que
+                es el propósito.
+                <br/> <img src="img/img15.png" alt="Seleccionar modulos"/><br/>
+                ¿Hemos realizado bien la instalación? <br/>Lo comprobaremos con un navegador con la siguiente dirección:
+                localhost. Si vemos la siguiente pantalla, todo está correcto.
+                <br/> <img src="img/img16.png" alt="Comprobar instalación"/><br/>
+                También comprobaremos qye MySQL también está trabajando correctamente. <br/>Para ello utilizaremos
+                también un navegador, en este caso la dirección será <strong>http://localhost/phpmyadmin</strong> .
+                Si todo está correcto, veremos la siguiente pantalla:
+                <br/> <img src="img/img17.png" alt="Pantalla correcta"/><br/>
+                Para finalizar realizaremos un Hola 2DAW! en PHP y lo mostraremos.<br/>
+                Para ello hemos creado la carpeta DWES en la siguiente ruta de xampp:<br/>
+
+                C:\xampp\htdocs\DWES<br/>
+
+
+                Dentro de la carpeta hemos creado un archivo PHP con el saludo, el sencillo código es el siguiente:
+                <br/> <img src="img/img18.png" alt="Saludo en PHP"/><br/>
+                Vemos su resultado en el navegador a través de la siguiente dirección:
+
+                <strong>http://localhost/DWES/index.php </strong>
+                <br/> <img src="img/img19.png" alt="resultado"/><br/>
+                Bibliografía: <br/>
+                - Apuntes de la plataforma para respuestas teoría.<br/>
+                - <a href="https://www.digitalocean.com/">https://www.digitalocean.com/ </a> Como guía en caso de
+                dudas.<br/>
+                - <a href="https://www.digitalocean.com/">https://www.digitalocean.com/ </a> Para la instalación y
+                configuración de Apache Tomcat.<br/>
+
+
+
+            </article>
+        </section>
+    </div>
+    <p>
+        <a href="http://jigsaw.w3.org/css-validator/check/referer">
+            <img style="border:0;width:88px;height:31px"
+                src="http://jigsaw.w3.org/css-validator/images/vcss"
+                alt="¡CSS Válido!" />
+        </a>
+    </p>
+    <p>
+        <a href="http://jigsaw.w3.org/css-validator/check/referer">
+            <img style="border:0;width:88px;height:31px"
+                src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+                alt="¡CSS Válido!" />
+            </a>
+        </p>    
+
+    <footer>Creado por Pablo Sánchez Sanvicente</footer>
+    <script>
+        function subir() {
+            document.documentElement.scrollTop = 0;
+        }
+        </script>
+</body>
+
+
+</html>

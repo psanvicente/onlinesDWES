@@ -1,0 +1,20 @@
+input{
+    width: 50px;
+    font-size: 1.8em;
+}
+button{
+    margin-left: 20px;
+}
+body{
+    background-color: #c4c0c0;
+    text-align: center;
+}
+
+#enviar{
+    width: 50Px;
+    height: 30px;
+}
+#enviar:hover{
+    box-shadow: 3px 3px black;
+   
+}

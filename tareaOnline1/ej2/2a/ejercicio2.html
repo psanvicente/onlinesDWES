@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html xmlns='http://www.w3.org/1999/xhtml' lang='en'>
+
+<head>
+    <meta charset='utf-8' />
+    <title>Contacto</title>
+    <link rel='stylesheet' type='text/css' href='src/css/estilos.css' />
+   
+</head>
+
+<body>
+    <header><h1>Pablo Sánchez Sanvicente</h1></header>
+    <form action="usuario.php" method="post">
+        <fieldset>
+            <legend>Contact Form</legend>
+            <input type="text" name="nombre" title="nombre" maxlength="15"  placeholder="First Name" required="required"/>
+            <input type="text" name="apellido" title="apellido" maxlength="30" placeholder="Last Name" required="required"/><br />
+            <label for="email">Email</label><input id="email" type="email" name='email' placeholder="Email-Address "  maxlength="30" required="required"/>
+            <label for="tel">Telephone</label><input id="tel" type="tel" name="number" placeholder="Telephone-Number " maxlength="9" required="required"/><br/>
+            <label for="web">Website</label><input id="web" type="url" name="website" placeholder="Website Url"/>
+            <label for="dept">Department</label><select name="department" id="dept" required="required">
+                <option value="" selected="selected" disabled="disabled" hidden="hidden">Select Department</option>
+                <option value="0">Developer</option>
+                <option value="1">Tester</option>
+                <option value="2">Project Manager</option>
+            </select><br/>
+            <label for="mess">Message</label><br/><textarea id="mess" name="message" cols="30" rows="5" placeholder="Enter message or comment." maxlength="100"></textarea><br/>
+            <input readonly="readonly" type="text" id="hint" title="hint" placeholder="Hint: Don't be negative or offtopic"/><br/>
+            <input type="reset" value="Cancel" id="cancel"/>
+            <input type="submit" value="Submit Form" id="enviar"/>
+        </fieldset>
+    </form>
+    
+    <div id="validado">
+        
+            <img style="border:0;width:88px;height:31px"
+                src="http://jigsaw.w3.org/css-validator/images/vcss"
+                alt="¡CSS Válido!" />
+    
+    
+    
+        <img style="border:0;width:88px;height:31px"
+            src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+            alt="¡CSS Válido!" />
+     
+
+</div>
+</body>
+
+</html>

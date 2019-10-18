@@ -1,0 +1,21 @@
+/*
+#25263A
+#667078
+#F9B800
+#b5b5b7
+*/
+textarea{
+    resize: none;
+}
+
+form{
+    width: 800px;
+    background-color: #b5b5b7 ;
+    *color: #667078;
+    color: #252839;
+    
+}
+
+body{
+    background-color: #252839 ;
+}

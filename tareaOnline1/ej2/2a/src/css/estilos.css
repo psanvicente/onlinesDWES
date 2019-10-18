@@ -1,0 +1,88 @@
+body{
+    text-align: left;
+    margin: 0px;
+    padding: 0px;
+}
+header{
+    background-color: #1ABC9C;
+    color: white;
+    padding: 12px;
+    padding-right: 25px;
+    text-align: right;
+}
+fieldset{
+   
+   *border-color: grey;
+   border: 0px;
+   padding: 0px;
+   margin: 0px;
+   *background-color: aqua;
+   width: 500px;
+   
+   
+}
+input, select, textarea{
+    border: 1.5px solid #BDC3C7;
+    padding: 5px;
+    margin: 5px;
+    color: black;
+
+    }
+    
+#enviar{
+background-color: #1ABC9C;
+color: white;
+}
+#cancel{
+    background-color: lightgrey;
+}
+
+form{
+    margin:0px;
+    margin-top: 25px;
+    *background-color: #F7F7F7;
+    padding: 15px;  
+    width: 500px;
+    border: 15px solid #6C81A1;
+    
+}
+legend{
+    font-size: 1.5em;
+   *background-color: #FFFFFF;
+   *background-color: lightgreen;
+    width: 400px;
+    color: #89ADD6;
+    border-bottom: 1.5px solid #BDC3C7;
+}
+#mess{
+    width: 350px;
+}
+#enviar:hover{
+    color: black;
+    background-color: lightsalmon;
+}
+#cancel:hover{
+    background-color: grey;
+    color: white;
+}
+/****/
+#validado{
+    width: 100%;
+    border-bottom: 1px solid black;
+    padding: 10px;
+    
+  text-align: center;
+  margin: 15px 0 0 0;
+}
+#hint{
+    *padding-top: 0px;
+    margin-top: 0px;
+    background-color: lightgrey;
+    width:350px;
+}
+#message{
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    resize: none;
+    width: 90%;
+}

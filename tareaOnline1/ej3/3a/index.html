@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Juego</title>
+    <link rel="stylesheet" type="text/css" href="src/css/estiloIndexs.css" />
+  </head>
+
+  <body>
+    <nav>
+      <div id="logo"></div>
+      <p><strong>Piedra, papel, tijera, lagarto, Spock.</strong></p>
+    </nav>
+    <div id="contenido">
+      <form action="jugar.php" method="post">
+        <div id="piedra" class="jugada"></div>
+        <input
+          type="radio"
+          name="opcion"
+          id="piedra1"
+          value="1"
+          checked="checked"
+        />
+        <label for="piedra1">Piedra</label><br />
+        <div id="papel" class="jugada"></div>
+        <input type="radio" name="opcion" id="papel1" value="2" />
+        <label for="papel1">Papel</label><br />
+        <div id="tijera" class="jugada"></div>
+        <input type="radio" name="opcion" id="tijeras1" value="3" />
+        <label for="tijeras1">Tijeras</label><br />
+        <div id="lagarto" class="jugada"></div>
+        <input type="radio" name="opcion" id="lagarto1" value="4" />
+        <label for="lagarto1">Lagarto</label><br />
+        <div id="spock" class="jugada"></div>
+        <input type="radio" name="opcion" id="spock1" value="5" />
+        <label for="spock1">Spock</label><br />
+        <input type="submit" value="Jugar" id="enviar" />
+      </form>
+      <div id="reglas">
+        «Las tijeras cortan el papel, el papel cubre a la piedra, la piedra
+        aplasta al lagarto, el lagarto envenena a Spock, Spock destroza las
+        tijeras, las tijeras decapitan al lagarto, el lagarto se come el papel,
+        el papel refuta a Spock, Spock vaporiza la piedra, y, como es habitual…
+        la piedra aplasta las tijeras.»
+      </div>
+      <div class="clear"></div>
+    </div>
+    <p id="valido">
+      <img
+        style="border:0;width:88px;height:31px"
+        src="http://jigsaw.w3.org/css-validator/images/vcss"
+        alt="¡CSS Válido!"
+      />
+      <img
+        style="border:0;width:88px;height:31px"
+        src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+        alt="¡CSS Válido!"
+      />
+    </p>
+  </body>
+</html>

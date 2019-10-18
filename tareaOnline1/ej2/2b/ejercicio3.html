@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html xmlns='http://www.w3.org/1999/xhtml' lang='en'>
+
+<head>
+    <meta charset='utf-8' />
+    <title>Curriculum vitae</title>
+    <link rel='stylesheet' type='text/css' href='src/css/estilos.css' />
+    <script type='text/javascript' src='src/js/app.js'></script>
+</head>
+
+<body>
+    <h1>Formulario Curriculum Vitae</h1> 
+    <form action="crearCV.php" method="post">
+        <fieldset>
+            <legend>Curriculum Vitae</legend>
+            <section>
+                <h2>Datos Personales</h2>
+                <input type="text" name="nombre" title="nombre" maxlength="15" placeholder="Nombre"/>
+                <input type="text" name="apellido1" title="apellido1" maxlength="20" placeholder="Primer Apellido"/>
+                <input type="text" name="apellido2" title="apellido2" maxlength="20"
+                    placeholder="Segundo Apellido"/><br />
+                <input type="text" name="direccion" title="direccion" maxlength="15" placeholder="Direccion"/>
+                <input type="text" name="ciudad" title="ciudad" maxlength="20" placeholder="Ciudad"/>
+                <input type="text" name="cp" title="cp" maxlength="5" placeholder="Código Postal" pattern="[0-9]{5}"/><br />
+                <label for="mail">E-mail</label><input id="mail" type="email" name='email' placeholder="Correo Electrónico"/>
+                <label for="tel">Teléfono</label><input id="tel" type="tel" name="number" placeholder="Teléfono" maxlength="9"/>
+
+
+                <input type="radio" name="sexo" value="hombre"id="hombre" checked="checked"/> <label for="hombre">Hombre</label>
+                <input type="radio" name="sexo" value="mujer" id="mujer"/> <label for="mujer">Mujer</label><br/>
+            </section>
+
+            <section>
+                <h2>Estudios</h2>
+                Máximo nivel de estudios:
+
+                <label for="estudios">Estudios</label><select name="estudios" id="estudios">
+                    <option value="" selected="selected" disabled="disabled" hidden="hidden">Categoría.</option>
+                    <option value="0">Graduado Escolar</option>
+                    <option value="1">Bachillerato</option>
+                    <option value="2">F.P 1</option>
+                    <option value="3">F.P 2</option>
+                    <option value="4">Grado</option>
+                    <option value="5">Otro</option>
+                </select>
+                <br />
+                <input type="text" name="nomEstudio" title="nomEstudio" maxlength="20"
+                    placeholder="Nombre Título"/><br />
+                <input type="text" name="centro" title="centro" maxlength="20" placeholder="Centro"/>
+                <input type="text" name="dirCentro" title="dirCentro" maxlength="20"
+                    placeholder="Dirección Centro"/><br />
+                <input type="text" name="ciuCentro" title="ciuCentro" maxlength="20" placeholder="Ciudad Centro"/>
+                <input type="text" name="cpCentro" title="cpCentro" maxlength="5" placeholder="C.P Centro"/><br />
+                <label for="obtencion"> Fecha Obtención:</label> <input type="date" name="obtencion" id="obtencion"/>
+                Idiomas: <br /> <input type="checkbox" name="ingles" id="ingles"/><label for="ingles">INGLÉS</label>
+                <input type="checkbox" name="frances" id="frances"/><label for="frances">FRANCÉS</label>
+               <input type="checkbox" name="aleman" id="aleman"/> <label for="aleman">ALEMÁN</label>
+                <input type="checkbox" name="otro" id="otro"/><label for="otro">OTRO</label>
+            </section>
+            <section>
+                <h2>Última Experiencia Laboral</h2>
+                <input type="radio" name="experiencia" value="con" checked="checked" id="con" onclick="habilitar()" /> <label
+                    for="con">Con experiencia</label>
+                <input type="radio" name="experiencia" value="sin" id="sin" onclick="deshabilitar()" /> <label
+                    for="sin">Sin experiencia</label><br/>
+                <input type="text" name="puesto" title="puesto" maxlength="20" placeholder="Puesto desempeñado"
+                    id="puesto"/>
+                <input type="text" name="empresa" title="empresa" maxlength="20" placeholder="Empresa"
+                    id="empresa"/><br />
+                    <label for="inicio">Fecha inicio: </label> <input type="date" name="inicio" id="inicio"/>
+                <label for="fin">Fecha fin: </label><input type="date" name="fin" id="fin"/><input type="checkbox" name="actualmente"
+                    id="actualmente" onclick="check()"/> <label for="actualmente">Actualmente</label> <br />
+                <br />
+                
+                <label for="funciones">Funciones desempeñadas:</label><br /><textarea name="funciones" id="funciones" cols="30" rows="10"></textarea><br />
+            </section>
+
+
+            <input type="submit" value="Generar C.V" id="enviar"/>
+        </fieldset>
+    </form>
+
+    <div id="validado">
+       
+            <img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss"
+                alt="¡CSS Válido!" />
+ 
+
+       
+            <img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+                alt="¡CSS Válido!!" />
+    
+
+    </div>
+</body>
+
+</html>
