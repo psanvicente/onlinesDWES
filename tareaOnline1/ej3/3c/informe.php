@@ -81,7 +81,7 @@ switch ($_POST['sexo']) {
     case 'mujer':
     if($bfp>=32){
         $bfp_tipo="Nivel Obeso";
-    }elseif($bfp>=31&&$bfp<24){
+    }elseif($bfp>=24&&$bfp<31){
         $bfp_tipo="En la media";
     }elseif($bfp>=21&&$bfp<24){
         $bfp_tipo="En forma";
