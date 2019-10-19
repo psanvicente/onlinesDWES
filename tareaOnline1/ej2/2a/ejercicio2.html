@@ -13,12 +13,12 @@
     <form action="usuario.php" method="post">
         <fieldset>
             <legend>Contact Form</legend>
-            <input type="text" name="nombre" title="nombre" maxlength="15"  placeholder="First Name" required="required"/>
-            <input type="text" name="apellido" title="apellido" maxlength="30" placeholder="Last Name" required="required"/><br />
-            <label for="email">Email</label><input id="email" type="email" name='email' placeholder="Email-Address "  maxlength="30" required="required"/>
-            <label for="tel">Telephone</label><input id="tel" type="tel" name="number" placeholder="Telephone-Number " maxlength="9" required="required"/><br/>
-            <label for="web">Website</label><input id="web" type="url" name="website" placeholder="Website Url"/>
-            <label for="dept">Department</label><select name="department" id="dept" required="required">
+            <label for="nombre">Nombre: </label><input id="nombre" type="text" name="nombre" title="nombre" maxlength="15"  placeholder="First Name" required="required"/>
+            <label for="apellido">Apellido: </label><input type="text" id="apellido" name="apellido" title="apellido" maxlength="30" placeholder="Last Name" required="required"/><br />
+            <label for="email">Email: </label><input id="email" type="email" name='email' placeholder="Email-Address "  maxlength="30" required="required"/>
+            <label for="tel">Telephone: </label><input id="tel" type="tel" name="number" placeholder="Telephone-Number " maxlength="9" required="required"/><br/>
+            <label for="web">Website: </label><input id="web" type="url" name="website" placeholder="Website Url"/>
+            <label for="dept">Department: </label><select name="department" id="dept" required="required">
                 <option value="" selected="selected" disabled="disabled" hidden="hidden">Select Department</option>
                 <option value="0">Developer</option>
                 <option value="1">Tester</option>

@@ -8,6 +8,7 @@
   </head>
   <body>
   <?php 
+  //DECLARAMOS VARIABLES Y LAS TRATAMOS PARA EVITAR ATAQUES MALICIOSOS
       $nombre = limpiarDatos($_POST['nombre']);
       $apell = limpiarDatos($_POST['apellido']);
       $email = limpiarDatos($_POST['email']);
@@ -18,7 +19,7 @@
       $message = limpiarDatos($_POST['message']);
       $puesto = 'Unknown'; //puesto de trabajo
 
-      //Procesar select
+      //Procesar select: Dependiendo del valor recibido será un puesto u otro.
       if($dep == '0'){
         $puesto = 'Desarrollador';
       }

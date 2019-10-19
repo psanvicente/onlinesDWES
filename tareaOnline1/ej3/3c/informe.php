@@ -8,8 +8,9 @@
     $data = htmlspecialchars($data);//convertimos caracteres especiales a html
     return $data;
   }
+  //declaramos variables y asignamos sus valores
 $altura= limpiarDatos($_POST['altura']/100);//lo pasamos a metros ya que lo recibimos en cm.
-$sexo=1;
+$sexo=1;// 1 hombre, 2 = mujer
 if($_POST['sexo']==="hombre"){
     $sexo = 1;//para los calculos del imc /bfp
 }else{

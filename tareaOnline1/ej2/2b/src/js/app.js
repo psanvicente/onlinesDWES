@@ -23,14 +23,15 @@ function check() {
     document.getElementById("empresa").setAttribute("disabled","");
     document.getElementById("empresa").value = "";
 
-    document.getElementById("anios").setAttribute("disabled","");
-    document.getElementById("anios").value = "";
 
     document.getElementById("inicio").setAttribute("disabled","");
     document.getElementById("inicio").value = "";
 
     document.getElementById("fin").setAttribute("disabled","");
     document.getElementById("fin").value = "";
+
+    document.getElementById("funciones").setAttribute("disabled","");
+    document.getElementById("funciones").value = "";
 
     document.getElementById("actualmente").setAttribute("disabled","");
     
@@ -39,10 +40,11 @@ function check() {
   function habilitar(){
     document.getElementById("puesto").removeAttribute("disabled","");
     document.getElementById("empresa").removeAttribute("disabled","");
-    document.getElementById("anios").removeAttribute("disabled","");
+  
     document.getElementById("inicio").removeAttribute("disabled","");
     document.getElementById("fin").removeAttribute("disabled","");
     document.getElementById("actualmente").removeAttribute("disabled","");
+    document.getElementById("funciones").removeAttribute("disabled","");
   }
   function check(){
       if(document.getElementById("actualmente").checked){

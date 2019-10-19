@@ -10,8 +10,10 @@
 
 <body>
     <?php 
+    //declaramos variables
   $funciones ="";
   $categoria = "";
+  //En este bucle , según la opción recibida, pondremos el nombre del título elegido en el select del formulario.
   switch ($_POST['estudios']) {
     case '0':
         $categoria = "Graduado Escolar";
@@ -72,8 +74,9 @@
         <p><strong>Ciudad: </strong><?php echo limpiarDatos($_POST['ciuCentro']); ?></p>
         <p><strong>Código Postal: </strong><?php echo limpiarDatos($_POST['cpCentro']); ?></p>
         <p><strong>Fecha Obtención[Año-Mes-Día]: </strong><?php echo limpiarDatos($_POST['obtencion']); ?></p>
-        <p><strong>Idiomas: </strong>
+        <p><strong>Idioma/s: </strong>
             <?php 
+            //En el caso de que el usuario haya elegido algún idioma, se pondrá la cadena perteneciente al idioma seleccionado.
         if (isset($_POST['ingles'])) {
 
        echo " - Inglés -";

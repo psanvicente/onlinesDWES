@@ -10,8 +10,9 @@
   <body>
     <h1>Filtrador de MAC</h1>
     <form action="procesar.php" method="post">
-      <!-- IMPORTANTE: Al valida solicita labels para cada input, si los pusieramos no podríamos realizar la separación
+      <!-- IMPORTANTE: Al validar solicita labels para cada input, si los pusieramos no podríamos realizar la separación
           por dos puntos ( : ) de cada par de digitos. 
+          Todo se solucionaría poniendo un único input con su label. Pero me gustaba este diseño por pares.
           Si quisieramos dejarlo perfecto no quedaría como busco (separados por dos puntos como suelen leerse las MACs-->
         <input type="text" name="1"  maxlength="2" pattern="[aA|bB|cC|dD|eE|fF|0|1|2|3|4|5|6|7|8|9]{2}" required="required"/> :
         <input type="text" name="2" maxlength="2" pattern="[aA|bB|cC|dD|eE|fF|0|1|2|3|4|5|6|7|8|9]{2}" required="required"/> :

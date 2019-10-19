@@ -8,10 +8,8 @@
   </head>
 
 <?php
-//PAPEL GANA PAPEL???? ARREGLAR
 
-//$opcion = $_POST['opcion'];
-//valor aleatorio entre 1 y 5 para saber qué opción elige la máquina.hint
+//valor aleatorio entre 1 y 5 para saber qué opción elige la máquina.
 $aleatorio = rand(1,5);//1 = Piedra, 2 = Papel, 3 = tijera, 4 = Lagarto, 5 = spock;
 $gana;//true == gana, false == false.
 $ganador;//quien gana de los 5
@@ -21,7 +19,7 @@ switch ($_POST['opcion']) {
         if($aleatorio == 4 || $aleatorio == 3){//Piedra gana a lagarto y tijeras
             $gana = true;
             $ganador = "piedra";
-            if($aleatorio==4){
+            if($aleatorio==4){// En esta parte del código nos apuntamos el nombre del perdedor para el mensaje final.
                 $perdedor="lagarto";
             }else{
                 $perdedor="tijeras";
@@ -137,7 +135,7 @@ if($aleatorio==$_POST['opcion']){
     </nav>
 
     <?php 
-
+    // mensaje final en el que se mostrará el resultado
     if($gana ==='empate'){
         echo "<p class='resultado'>Has empatado intentalo de nuevo.</p>";
 
@@ -160,6 +158,7 @@ if($aleatorio==$_POST['opcion']){
     ?>
     <br/>
     <script>
+        // método que nos devolverá a la web principal
     function denuevo(){
         window.location.href = "index.html";
         

@@ -17,7 +17,7 @@ fieldset{
    padding: 0px;
    margin: 0px;
    *background-color: aqua;
-   width: 500px;
+   width: 550px;
    
    
 }
@@ -42,7 +42,7 @@ form{
     margin-top: 25px;
     *background-color: #F7F7F7;
     padding: 15px;  
-    width: 500px;
+    width: 550px;
     border: 15px solid #6C81A1;
     
 }

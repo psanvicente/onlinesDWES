@@ -1,0 +1,7 @@
+# ############################# PABLO SÁNCHEZ SANVICENTE - DAWS I.E.S TRASSIERRA ############################# 
+
+# LA APLICACIÓN GESTIONARÁ UN CURRICULUM VITAE
+
+# INTRODUZCA LOS DATOS SOLICITADOS.
+
+

@@ -24,23 +24,24 @@ $fichero = fopen("listaMAC.txt", "r");//solo lectura, puntero al inicio
 $linea = "";
 $encontrado = false;//si encontramos una mac , decimos que true.
 while(!feof($fichero)){
-    $linea = fgets($fichero);
+    $linea = fgets($fichero);//leemos linea a linea del fichero, hasta que llegamos al final
     if($linea == $mac){
         echo "<div>La MAC introducida ya existe en el listado. </div>";
         $encontrado = true;
         break;
     }
  }
- if($encontrado==false){
+ if($encontrado==false){//Si no la encontramos, añadimos e informamos de que fue añadida con éxito la MAC
     echo "<div>MAC añadida con éxito</div>";
 }     
- fclose($fichero);
+ fclose($fichero);//cerramos fichero
  if($encontrado == false){
     $fichero = fopen("listaMAC.txt", "a");//a+ permite leer y escribir, situa el puntero al final.
-    fwrite($fichero,$mac);
+    fwrite($fichero,$mac);//escribimos la mac en nuestro fichero.
     fclose($fichero);
  }
 ?>
+    <!-- En este div mostraremos la lista de mac´s que se encuentre en el archivo de texto-->
     <div id="listado">
     <h2>Su filtrado de MAC actual es:</h2>
     <?php
