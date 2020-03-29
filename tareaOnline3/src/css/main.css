@@ -1,0 +1,263 @@
+body {
+    padding: 0;
+    margin: 0;
+    background: #f2f6e9;
+  }
+  .aviso{
+    color: red;
+  }
+  table{
+    text-align: center;
+    margin: 0 auto;
+    border-collapse: collapse;
+    border: 1px solid black;
+  }
+  td,th{
+    border: 1px solid black;
+    padding: 5px;
+    background-color: white;
+  }
+  th{
+    background-color: #6AB446;
+  }
+ 
+ #submenu{
+   background-color: lightgrey ;
+   padding: 5px 0;
+  
+ }
+ #submenu a{
+  color: black;
+  padding: 0;
+  margin: 0;
+ }
+ #submenu a:hover{
+   background-color: #222222;
+   color: white;
+ }
+ #desplegable{
+   background-color: #6AB446;
+   border: black;
+ }
+  /*--- navigation bar ---*/
+  
+  .navbar {
+    background:#6ab446;
+  }
+
+  
+  .nav-link,
+  .navbar-brand {
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .nav-link {
+    margin-right: 1em !important;
+  }
+  
+  .nav-link:hover {
+    color: #000;
+  }
+  
+  .navbar-collapse {
+    justify-content: flex-end;
+  }
+  .container{
+    padding: 25px;
+  }
+
+  /*Añadimos*/
+  .header {
+    background-image: url('../images/header-background.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }  
+
+  .overlay {
+    position: absolute;
+    min-height: 100%;
+    min-width: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.6);
+  }
+  /*texto*/
+  .description {
+    left: 50%;
+    position: absolute;
+    top: 45%;
+    transform: translate(-50%, -55%);
+    text-align: center;
+  }
+  .description h1 {
+    color: #6ab446;
+  }
+  .description p {
+    color: #fff;
+    font-size: 1.3rem;
+    line-height: 1.5;
+  }
+  label{
+    width: 85px;
+  }
+  /*Botón*/
+  button{
+    margin: 10px;
+  }
+  .description button {
+    border:1px solid #6ab446;
+    background:#6ab446;
+    border-radius: 0;
+    color:#fff;
+  }
+  .description button:hover {
+    border:1px solid #fff;
+    background:#fff;
+    color:#000;
+  }
+  /*FORMULARIO */
+  .features .form-control,
+.features input {
+    border-radius: 0;
+}
+.features .btn {
+  background-color: #589b37;
+  border: 1px solid #589b37;
+  color: #fff;
+  margin-top: 20px;
+}
+.features .btn:hover {
+  background-color: #333;
+  border: 1px solid #333;
+}
+/* FOOTER */
+.page-footer {
+  background-color: #222;
+  color: #ccc;
+  padding: 15px 0 15px;
+}
+.footer-copyright {
+  color: #666;
+  padding: 10px 0;
+}
+#twitter{
+  width: 25px;
+  height: 25px;
+  margin: 0;
+  background-image: url("../images/twLogo.jpg");
+  background-size: 100% 100%;
+  display: inline-block;
+  margin-right: 10px;
+  
+}
+
+@media (max-width: 575.98px) {
+  .description {
+    left: 0;
+    padding: 0 15px;
+    position: absolute;
+    top: 10%;
+    transform: none;
+    text-align: center;
+  }
+  
+  .description h1 {
+    font-size: 2em;
+  }
+  
+  .description p {
+    font-size: 1.2rem;
+  }
+  
+  .features {
+    margin: 0;
+  }
+}
+#logo{
+  background-image: url("../images/Logo.jpg");
+  height: 40px;
+  width: 40px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#ancla{
+  text-decoration: none;
+  color: white;
+}
+
+#ancla:hover #boton{
+color: green;
+}
+
+h1{ text-align: center;}
+
+#enun{
+  padding: 10px;
+}
+ /* Ancho mínimo del ejercicio */
+ .ej{
+  height: 300px;
+  border: 1px solid black;
+  margin: 0 auto;
+  text-align: center;
+  
+}
+.fondoPar{
+  background-color: lightgrey;
+}
+/* boton subir / volver arriba */
+
+#return-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.7);
+  width: 50px;
+  height: 50px;
+  display: block;
+  text-decoration: none;
+  -webkit-border-radius: 35px;
+  -moz-border-radius: 35px;
+  border-radius: 35px;
+  display: none;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+#return-to-top i {
+  color: #fff;
+  margin: 0;
+  position: relative;
+  left: 16px;
+  top: 13px;
+  font-size: 19px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+#return-to-top:hover {
+  background: rgba(0, 0, 0, 0.9);
+}
+#return-to-top:hover i {
+  color: #fff;
+  top: 5px;
+}
+#cerrarSesion{
+  float: right;
+}
+
+#enPDF{
+  text-align: center;
+  padding:15px;
+}
+
+td{
+  text-align: center !important;
+}

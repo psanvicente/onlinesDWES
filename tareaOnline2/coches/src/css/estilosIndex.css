@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+html{
+    background-color: #011F31;
+    color: white;
+}
+header{
+    height: 150px;
+    border: 1px solid black;
+    background-size: 100% 100%;
+    background-image: url("../img/carretera.jpg");
+}
+nav{
+    height: 100px;
+    border: 1px solid black;
+    background-color: #0B516C;
+}
+table{text-align: center;}
+
+a{
+color: black;
+}
+#izq{
+    float: left;
+    width: 400px;
+}
+#derecha{
+    float: right;
+    width: 400px;
+}
+#contenedor{
+    width: 100%;
+    text-align: center;
+}
+.marcas{
+    width: 100px;
+    height: 100px;
+    border: 1px black solid;
+    display: inline-block;
+    
+    background-size: 100% 100%;
+}
+h1{
+    text-align: center;
+}
+#citroen{
+    background-image: url("../img/citroen.jpg");
+    
+}
+#audi{
+    background-image: url("../img/audi.jpg");
+    
+}
+#bmw{
+    background-image: url("../img/bmw.png");
+    background-color: white;
+    
+}
+#kia{
+    background-image: url("../img/kia.png");
+    
+}
+#hyundai{
+    background-image: url("../img/hyundai.jpg");
+    
+}
+

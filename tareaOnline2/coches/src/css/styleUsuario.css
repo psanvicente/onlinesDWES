@@ -1,0 +1,29 @@
+/* CSS3 code here */
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    
+    background-color: lightblue;
+    height: 100px;    
+    text-align: center;
+}
+
+
+.pregunta{
+    width: 350px;
+    height: 100px;
+    padding: 25px;
+    border: 1px solid black;
+    display: inline-block;
+    overflow: hidden;
+}
+form{
+background-color: lightslategray;
+}
+#enviar{
+    width: 125px;
+    height: 75px;
+}
+table{text-align: center;}

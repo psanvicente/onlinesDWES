@@ -1,0 +1,9 @@
+"use strict"
+//var product = "Socks";
+var app = new Vue({
+    el: '#app',
+    data:{
+        product: "Socks",
+        description: "Calentitos y suaves"
+    }
+});

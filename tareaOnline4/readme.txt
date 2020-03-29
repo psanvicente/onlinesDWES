@@ -1,0 +1,1 @@
+El ejercicio 3 está resuelto dentro de la carpeta ejercicio2 ya que se seguía trabajando con los mismos archivos y una base de datos.
